@@ -1,0 +1,1055 @@
+{
+  "phase": 2,
+  "mode": "defense_slim",
+  "note": "Baselines: 5 seeds x 100 ep kept. Vision: 1 seed x 20 ep (time cut for presentation).",
+  "env": "tissue_retraction",
+  "controllers": {
+    "oracle": {
+      "n_seeds": 5,
+      "episodes_total": 500,
+      "successes_total": 500,
+      "success_rate_pooled": 1.0,
+      "success_rate_mean_over_seeds": 1.0,
+      "success_rate_std_over_seeds": 0.0,
+      "wilson_ci_95": {
+        "center": 0.9961876907345482,
+        "low": 0.9923753814690964,
+        "high": 0.9999999999999999,
+        "level": 0.95
+      },
+      "mean_reward_mean_over_seeds": -47.662559774942736,
+      "mean_reward_std_over_seeds": 1.4774710152664823,
+      "mean_length_mean_over_seeds": 112.55199999999999,
+      "mean_length_std_over_seeds": 1.673814804570684,
+      "mean_act_ms": 0.06535282387639751,
+      "steps_per_sec": 15.123759421495198,
+      "failure_reasons": {
+        "success": 500,
+        "timeout": 0,
+        "terminated_no_goal": 0
+      },
+      "per_seed": [
+        {
+          "episodes": 100,
+          "success_rate": 1.0,
+          "successes": 100,
+          "mean_reward": -48.3385882020768,
+          "median_reward": -45.49554680169259,
+          "std_reward": 19.710084113438253,
+          "mean_length": 113.05,
+          "median_length": 111.5,
+          "failure_reasons": {
+            "success": 100,
+            "timeout": 0,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.981502596261999,
+            "low": 0.9630051925239981,
+            "high": 0.9999999999999999,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.06653217970336343,
+          "steps_per_sec": 15.061378917670808,
+          "total_steps": 11305,
+          "loop_wall_sec": 750.5952849201858,
+          "controller": "oracle",
+          "env": "tissue_retraction",
+          "wall_time_sec": 750.59752202034,
+          "max_steps": 400,
+          "seed": 11,
+          "meta": {
+            "timestamp_utc": "2026-08-06T06:52:33.115123+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 11,
+            "controller": "oracle",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        },
+        {
+          "episodes": 100,
+          "success_rate": 1.0,
+          "successes": 100,
+          "mean_reward": -49.17399686258408,
+          "median_reward": -46.726843583727344,
+          "std_reward": 18.68458395232483,
+          "mean_length": 114.3,
+          "median_length": 113.0,
+          "failure_reasons": {
+            "success": 100,
+            "timeout": 0,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.981502596261999,
+            "low": 0.9630051925239981,
+            "high": 0.9999999999999999,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.06505869302901905,
+          "steps_per_sec": 15.225049995598638,
+          "total_steps": 11430,
+          "loop_wall_sec": 750.7364510004409,
+          "controller": "oracle",
+          "env": "tissue_retraction",
+          "wall_time_sec": 750.7384388446808,
+          "max_steps": 400,
+          "seed": 22,
+          "meta": {
+            "timestamp_utc": "2026-08-06T07:05:15.711829+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 22,
+            "controller": "oracle",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        },
+        {
+          "episodes": 100,
+          "success_rate": 1.0,
+          "successes": 100,
+          "mean_reward": -47.73489689328887,
+          "median_reward": -47.08954891240836,
+          "std_reward": 16.997879288315403,
+          "mean_length": 112.84,
+          "median_length": 114.0,
+          "failure_reasons": {
+            "success": 100,
+            "timeout": 0,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.981502596261999,
+            "low": 0.9630051925239981,
+            "high": 0.9999999999999999,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.06571423080120894,
+          "steps_per_sec": 14.964471594912014,
+          "total_steps": 11284,
+          "loop_wall_sec": 754.0526859522797,
+          "controller": "oracle",
+          "env": "tissue_retraction",
+          "wall_time_sec": 754.0546088218689,
+          "max_steps": 400,
+          "seed": 33,
+          "meta": {
+            "timestamp_utc": "2026-08-06T07:17:57.678960+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 33,
+            "controller": "oracle",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        },
+        {
+          "episodes": 100,
+          "success_rate": 1.0,
+          "successes": 100,
+          "mean_reward": -48.20815239623275,
+          "median_reward": -48.36816648104673,
+          "std_reward": 18.170840269570984,
+          "mean_length": 113.21,
+          "median_length": 115.5,
+          "failure_reasons": {
+            "success": 100,
+            "timeout": 0,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.981502596261999,
+            "low": 0.9630051925239981,
+            "high": 0.9999999999999999,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.06523775520877054,
+          "steps_per_sec": 15.17624112317619,
+          "total_steps": 11321,
+          "loop_wall_sec": 745.9686432308517,
+          "controller": "oracle",
+          "env": "tissue_retraction",
+          "wall_time_sec": 745.9707205295563,
+          "max_steps": 400,
+          "seed": 44,
+          "meta": {
+            "timestamp_utc": "2026-08-06T07:30:32.406450+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 44,
+            "controller": "oracle",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        },
+        {
+          "episodes": 100,
+          "success_rate": 1.0,
+          "successes": 100,
+          "mean_reward": -44.85716452053116,
+          "median_reward": -42.26817444320681,
+          "std_reward": 16.508379190495702,
+          "mean_length": 109.36,
+          "median_length": 108.0,
+          "failure_reasons": {
+            "success": 100,
+            "timeout": 0,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.981502596261999,
+            "low": 0.9630051925239981,
+            "high": 0.9999999999999999,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.06422126063962563,
+          "steps_per_sec": 15.191655476118338,
+          "total_steps": 10936,
+          "loop_wall_sec": 719.8688791482709,
+          "controller": "oracle",
+          "env": "tissue_retraction",
+          "wall_time_sec": 719.8705554008484,
+          "max_steps": 400,
+          "seed": 55,
+          "meta": {
+            "timestamp_utc": "2026-08-06T07:42:40.540484+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 55,
+            "controller": "oracle",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        }
+      ]
+    },
+    "heuristic": {
+      "n_seeds": 5,
+      "episodes_total": 500,
+      "successes_total": 500,
+      "success_rate_pooled": 1.0,
+      "success_rate_mean_over_seeds": 1.0,
+      "success_rate_std_over_seeds": 0.0,
+      "wilson_ci_95": {
+        "center": 0.9961876907345482,
+        "low": 0.9923753814690964,
+        "high": 0.9999999999999999,
+        "level": 0.95
+      },
+      "mean_reward_mean_over_seeds": -97.37788730150636,
+      "mean_reward_std_over_seeds": 2.961746895485258,
+      "mean_length_mean_over_seeds": 223.656,
+      "mean_length_std_over_seeds": 3.3399856287115943,
+      "mean_act_ms": 0.06449221409244021,
+      "steps_per_sec": 15.585920317199925,
+      "failure_reasons": {
+        "success": 500,
+        "timeout": 0,
+        "terminated_no_goal": 0
+      },
+      "per_seed": [
+        {
+          "episodes": 100,
+          "success_rate": 1.0,
+          "successes": 100,
+          "mean_reward": -98.74880782075607,
+          "median_reward": -93.28395818514412,
+          "std_reward": 39.47421902062507,
+          "mean_length": 224.69,
+          "median_length": 222.0,
+          "failure_reasons": {
+            "success": 100,
+            "timeout": 0,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.981502596261999,
+            "low": 0.9630051925239981,
+            "high": 0.9999999999999999,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.06467145966916628,
+          "steps_per_sec": 15.464556616714633,
+          "total_steps": 22469,
+          "loop_wall_sec": 1452.935286596883,
+          "controller": "heuristic",
+          "env": "tissue_retraction",
+          "wall_time_sec": 1452.937593460083,
+          "max_steps": 400,
+          "seed": 11,
+          "meta": {
+            "timestamp_utc": "2026-08-06T08:07:05.229164+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 11,
+            "controller": "heuristic",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        },
+        {
+          "episodes": 100,
+          "success_rate": 1.0,
+          "successes": 100,
+          "mean_reward": -100.4157688761808,
+          "median_reward": -95.5171242794923,
+          "std_reward": 37.42631863253222,
+          "mean_length": 227.12,
+          "median_length": 225.0,
+          "failure_reasons": {
+            "success": 100,
+            "timeout": 0,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.981502596261999,
+            "low": 0.9630051925239981,
+            "high": 0.9999999999999999,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.06370194927651819,
+          "steps_per_sec": 15.671480010658644,
+          "total_steps": 22712,
+          "loop_wall_sec": 1449.2568656280637,
+          "controller": "heuristic",
+          "env": "tissue_retraction",
+          "wall_time_sec": 1449.259895324707,
+          "max_steps": 400,
+          "seed": 22,
+          "meta": {
+            "timestamp_utc": "2026-08-06T08:31:23.197306+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 22,
+            "controller": "heuristic",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        },
+        {
+          "episodes": 100,
+          "success_rate": 1.0,
+          "successes": 100,
+          "mean_reward": -97.5439970565646,
+          "median_reward": -95.90275857781151,
+          "std_reward": 34.073348745140265,
+          "mean_length": 224.33,
+          "median_length": 225.5,
+          "failure_reasons": {
+            "success": 100,
+            "timeout": 0,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.981502596261999,
+            "low": 0.9630051925239981,
+            "high": 0.9999999999999999,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.0659038775799727,
+          "steps_per_sec": 15.363468291234275,
+          "total_steps": 22433,
+          "loop_wall_sec": 1460.1520681888796,
+          "controller": "heuristic",
+          "env": "tissue_retraction",
+          "wall_time_sec": 1460.1542568206787,
+          "max_steps": 400,
+          "seed": 33,
+          "meta": {
+            "timestamp_utc": "2026-08-06T08:55:51.508939+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 33,
+            "controller": "heuristic",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        },
+        {
+          "episodes": 100,
+          "success_rate": 1.0,
+          "successes": 100,
+          "mean_reward": -98.42652746144013,
+          "median_reward": -98.7217892828738,
+          "std_reward": 36.434395887606584,
+          "mean_length": 224.87,
+          "median_length": 228.5,
+          "failure_reasons": {
+            "success": 100,
+            "timeout": 0,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.981502596261999,
+            "low": 0.9630051925239981,
+            "high": 0.9999999999999999,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.06336229583092358,
+          "steps_per_sec": 15.780357739609503,
+          "total_steps": 22487,
+          "loop_wall_sec": 1424.9993803091347,
+          "controller": "heuristic",
+          "env": "tissue_retraction",
+          "wall_time_sec": 1425.0021934509277,
+          "max_steps": 400,
+          "seed": 44,
+          "meta": {
+            "timestamp_utc": "2026-08-06T09:19:44.292732+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 44,
+            "controller": "heuristic",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        },
+        {
+          "episodes": 100,
+          "success_rate": 1.0,
+          "successes": 100,
+          "mean_reward": -91.7543352925902,
+          "median_reward": -86.57050772393634,
+          "std_reward": 33.111557282748464,
+          "mean_length": 217.27,
+          "median_length": 214.5,
+          "failure_reasons": {
+            "success": 100,
+            "timeout": 0,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.981502596261999,
+            "low": 0.9630051925239981,
+            "high": 0.9999999999999999,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.06482148810562034,
+          "steps_per_sec": 15.649738927782561,
+          "total_steps": 21727,
+          "loop_wall_sec": 1388.3298692880198,
+          "controller": "heuristic",
+          "env": "tissue_retraction",
+          "wall_time_sec": 1388.3321659564972,
+          "max_steps": 400,
+          "seed": 55,
+          "meta": {
+            "timestamp_utc": "2026-08-06T09:43:03.629434+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 55,
+            "controller": "heuristic",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        }
+      ]
+    },
+    "random": {
+      "n_seeds": 5,
+      "episodes_total": 500,
+      "successes_total": 0,
+      "success_rate_pooled": 0.0,
+      "success_rate_mean_over_seeds": 0.0,
+      "success_rate_std_over_seeds": 0.0,
+      "wilson_ci_95": {
+        "center": 0.0038123092654516813,
+        "low": 0.0,
+        "high": 0.007624618530903363,
+        "level": 0.95
+      },
+      "mean_reward_mean_over_seeds": -335.1395641333961,
+      "mean_reward_std_over_seeds": 3.8973141177074417,
+      "mean_length_mean_over_seeds": 400.0,
+      "mean_length_std_over_seeds": 0.0,
+      "mean_act_ms": 0.0927176403766498,
+      "steps_per_sec": 17.141748110585297,
+      "failure_reasons": {
+        "success": 0,
+        "timeout": 500,
+        "terminated_no_goal": 0
+      },
+      "per_seed": [
+        {
+          "episodes": 100,
+          "success_rate": 0.0,
+          "successes": 0,
+          "mean_reward": -336.75666051287226,
+          "median_reward": -334.43215269797264,
+          "std_reward": 60.897437830127004,
+          "mean_length": 400.0,
+          "median_length": 400.0,
+          "failure_reasons": {
+            "success": 0,
+            "timeout": 100,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.018497403738000955,
+            "low": 0.0,
+            "high": 0.03699480747600191,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.09150878326036035,
+          "steps_per_sec": 17.249682060448375,
+          "total_steps": 40000,
+          "loop_wall_sec": 2318.883319694083,
+          "controller": "random",
+          "env": "tissue_retraction",
+          "wall_time_sec": 2318.886910200119,
+          "max_steps": 400,
+          "seed": 11,
+          "meta": {
+            "timestamp_utc": "2026-08-06T10:21:50.026434+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 11,
+            "controller": "random",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        },
+        {
+          "episodes": 100,
+          "success_rate": 0.0,
+          "successes": 0,
+          "mean_reward": -338.5660226804108,
+          "median_reward": -333.367120094465,
+          "std_reward": 55.440252551160114,
+          "mean_length": 400.0,
+          "median_length": 400.0,
+          "failure_reasons": {
+            "success": 0,
+            "timeout": 100,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.018497403738000955,
+            "low": 0.0,
+            "high": 0.03699480747600191,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.09166889236075804,
+          "steps_per_sec": 16.88981031047962,
+          "total_steps": 40000,
+          "loop_wall_sec": 2368.2918437030166,
+          "controller": "random",
+          "env": "tissue_retraction",
+          "wall_time_sec": 2368.295332431793,
+          "max_steps": 400,
+          "seed": 22,
+          "meta": {
+            "timestamp_utc": "2026-08-06T11:01:26.695279+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 22,
+            "controller": "random",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        },
+        {
+          "episodes": 100,
+          "success_rate": 0.0,
+          "successes": 0,
+          "mean_reward": -335.3446380104492,
+          "median_reward": -335.58676577131473,
+          "std_reward": 55.14240821740209,
+          "mean_length": 400.0,
+          "median_length": 400.0,
+          "failure_reasons": {
+            "success": 0,
+            "timeout": 100,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.018497403738000955,
+            "low": 0.0,
+            "high": 0.03699480747600191,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.0920988702797331,
+          "steps_per_sec": 17.08588093090315,
+          "total_steps": 40000,
+          "loop_wall_sec": 2341.1142897321843,
+          "controller": "random",
+          "env": "tissue_retraction",
+          "wall_time_sec": 2341.1181168556213,
+          "max_steps": 400,
+          "seed": 33,
+          "meta": {
+            "timestamp_utc": "2026-08-06T11:40:39.085166+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 33,
+            "controller": "random",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        },
+        {
+          "episodes": 100,
+          "success_rate": 0.0,
+          "successes": 0,
+          "mean_reward": -337.4026601058273,
+          "median_reward": -342.2065571866567,
+          "std_reward": 54.51842812810228,
+          "mean_length": 400.0,
+          "median_length": 400.0,
+          "failure_reasons": {
+            "success": 0,
+            "timeout": 100,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.018497403738000955,
+            "low": 0.0,
+            "high": 0.03699480747600191,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.09744908510474488,
+          "steps_per_sec": 17.146921280502887,
+          "total_steps": 40000,
+          "loop_wall_sec": 2332.780290155206,
+          "controller": "random",
+          "env": "tissue_retraction",
+          "wall_time_sec": 2332.7838661670685,
+          "max_steps": 400,
+          "seed": 44,
+          "meta": {
+            "timestamp_utc": "2026-08-06T12:19:39.671321+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 44,
+            "controller": "random",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        },
+        {
+          "episodes": 100,
+          "success_rate": 0.0,
+          "successes": 0,
+          "mean_reward": -327.6278393574209,
+          "median_reward": -321.55172416770176,
+          "std_reward": 57.24589126265596,
+          "mean_length": 400.0,
+          "median_length": 400.0,
+          "failure_reasons": {
+            "success": 0,
+            "timeout": 100,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.018497403738000955,
+            "low": 0.0,
+            "high": 0.03699480747600191,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.09086257087765262,
+          "steps_per_sec": 17.33644597059245,
+          "total_steps": 40000,
+          "loop_wall_sec": 2307.277977726888,
+          "controller": "random",
+          "env": "tissue_retraction",
+          "wall_time_sec": 2307.2813947200775,
+          "max_steps": 400,
+          "seed": 55,
+          "meta": {
+            "timestamp_utc": "2026-08-06T12:58:14.535254+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 55,
+            "controller": "random",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 100,
+            "phase": 2
+          }
+        }
+      ]
+    },
+    "synthetic_vision": {
+      "n_seeds": 1,
+      "episodes_total": 20,
+      "successes_total": 0,
+      "success_rate_pooled": 0.0,
+      "success_rate_mean_over_seeds": 0.0,
+      "success_rate_std_over_seeds": 0.0,
+      "wilson_ci_95": {
+        "center": 0.0805650627474666,
+        "low": 0.0,
+        "high": 0.16113012549493322,
+        "level": 0.95
+      },
+      "mean_reward_mean_over_seeds": -451.94471666162025,
+      "mean_reward_std_over_seeds": 0.0,
+      "mean_length_mean_over_seeds": 400.0,
+      "mean_length_std_over_seeds": 0.0,
+      "mean_act_ms": 0.47800478420685977,
+      "steps_per_sec": 17.361127358456162,
+      "failure_reasons": {
+        "success": 0,
+        "timeout": 20,
+        "terminated_no_goal": 0
+      },
+      "per_seed": [
+        {
+          "episodes": 20,
+          "success_rate": 0.0,
+          "successes": 0,
+          "mean_reward": -451.94471666162025,
+          "median_reward": -447.38525214871834,
+          "std_reward": 59.14532110802334,
+          "mean_length": 400.0,
+          "median_length": 400.0,
+          "failure_reasons": {
+            "success": 0,
+            "timeout": 20,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.0805650627474666,
+            "low": 0.0,
+            "high": 0.16113012549493322,
+            "level": 0.95
+          },
+          "mean_act_ms": 0.47800478420685977,
+          "steps_per_sec": 17.361127358456162,
+          "total_steps": 8000,
+          "loop_wall_sec": 460.79956876207143,
+          "controller": "synthetic_vision",
+          "env": "tissue_retraction",
+          "wall_time_sec": 460.8018248081207,
+          "max_steps": 400,
+          "seed": 11,
+          "meta": {
+            "timestamp_utc": "2026-08-06T13:37:13.300344+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 11,
+            "controller": "synthetic_vision",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "env": "tissue_retraction",
+            "episodes": 20,
+            "phase": 2
+          }
+        }
+      ]
+    },
+    "model_vision": {
+      "n_seeds": 1,
+      "episodes_total": 20,
+      "successes_total": 0,
+      "success_rate_pooled": 0.0,
+      "success_rate_mean_over_seeds": 0.0,
+      "success_rate_std_over_seeds": 0.0,
+      "wilson_ci_95": {
+        "center": 0.0805650627474666,
+        "low": 0.0,
+        "high": 0.16113012549493322,
+        "level": 0.95
+      },
+      "mean_reward_mean_over_seeds": -417.4496497819852,
+      "mean_reward_std_over_seeds": 0.0,
+      "mean_length_mean_over_seeds": 400.0,
+      "mean_length_std_over_seeds": 0.0,
+      "mean_act_ms": 15.888656726339832,
+      "steps_per_sec": 13.8132511532094,
+      "failure_reasons": {
+        "success": 0,
+        "timeout": 20,
+        "terminated_no_goal": 0
+      },
+      "per_seed": [
+        {
+          "episodes": 20,
+          "success_rate": 0.0,
+          "successes": 0,
+          "mean_reward": -417.4496497819852,
+          "median_reward": -409.6669836609979,
+          "std_reward": 54.06388579405108,
+          "mean_length": 400.0,
+          "median_length": 400.0,
+          "failure_reasons": {
+            "success": 0,
+            "timeout": 20,
+            "terminated_no_goal": 0
+          },
+          "wilson_ci_95": {
+            "center": 0.0805650627474666,
+            "low": 0.0,
+            "high": 0.16113012549493322,
+            "level": 0.95
+          },
+          "mean_act_ms": 15.888656726339832,
+          "steps_per_sec": 13.8132511532094,
+          "total_steps": 8000,
+          "loop_wall_sec": 579.1540247309022,
+          "controller": "model_vision",
+          "env": "tissue_retraction",
+          "wall_time_sec": 584.2708535194397,
+          "max_steps": 400,
+          "seed": 11,
+          "meta": {
+            "timestamp_utc": "2026-08-06T13:47:05.869477+00:00",
+            "project_root": "/workspace/vision_robotic",
+            "git_commit": "6f0476c43db9d23fb205fc24ac8b29fec85bf849",
+            "python": "3.10.20",
+            "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+            "packages": {
+              "torch": "2.6.0+cu124",
+              "numpy": "2.2.6",
+              "cv2": "5.0.0",
+              "yaml": "6.0.3",
+              "segmentation_models_pytorch": "0.5.0"
+            },
+            "seed": 11,
+            "controller": "model_vision",
+            "config": "configs/simulation.yaml",
+            "config_sha256": "58d478ff4e8899a8bd9e6adbfe0e5f9502e8a362ecbd6077623acc63109051a0",
+            "checkpoint": "outputs/checkpoints/run3_ft/best.pt",
+            "checkpoint_sha256": "78b8d69a99a227c3362f13b18d47b0e72948db7e9587c96956be1121723be3eb",
+            "env": "tissue_retraction",
+            "episodes": 20,
+            "phase": 2
+          }
+        }
+      ]
+    }
+  },
+  "files": {
+    "oracle": [
+      "sim_oracle_seed11_100ep.json",
+      "sim_oracle_seed22_100ep.json",
+      "sim_oracle_seed33_100ep.json",
+      "sim_oracle_seed44_100ep.json",
+      "sim_oracle_seed55_100ep.json"
+    ],
+    "heuristic": [
+      "sim_heuristic_seed11_100ep.json",
+      "sim_heuristic_seed22_100ep.json",
+      "sim_heuristic_seed33_100ep.json",
+      "sim_heuristic_seed44_100ep.json",
+      "sim_heuristic_seed55_100ep.json"
+    ],
+    "random": [
+      "sim_random_seed11_100ep.json",
+      "sim_random_seed22_100ep.json",
+      "sim_random_seed33_100ep.json",
+      "sim_random_seed44_100ep.json",
+      "sim_random_seed55_100ep.json"
+    ],
+    "synthetic_vision": [
+      "sim_synthetic_vision_seed11_20ep.json"
+    ],
+    "model_vision": [
+      "sim_model_vision_seed11_20ep.json"
+    ]
+  },
+  "gate": {
+    "phase2_gate": "PASS_SLIM",
+    "protocol": {
+      "baselines": "5 seeds x 100 episodes, max_steps=400",
+      "vision": "1 seed (11) x 20 episodes, max_steps=400"
+    },
+    "oracle_near_100": true,
+    "heuristic_gt_random": true,
+    "oracle_success": 1.0,
+    "heuristic_success": 1.0,
+    "random_success": 0.0,
+    "synthetic_vision_success": 0.0,
+    "model_vision_success": 0.0
+  }
+}

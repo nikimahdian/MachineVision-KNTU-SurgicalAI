@@ -1,0 +1,35 @@
+# Simulation evaluation config
+# Usage: python src/sim/run_env.py --config configs/simulation.yaml
+
+env:
+  name: tissue_retraction        # reach | tissue_retraction | tissue_manipulation
+  observation_type: rgb          # rgb | state | rgbd
+  image_shape: [128, 128]
+  render_mode: headless          # headless | human
+  render_framework: pyglet
+  time_step: 0.1
+  frame_skip: 3
+  settle_steps: 20
+
+evaluation:
+  episodes: 50
+  seed: 42
+  controllers:
+    - random
+    - heuristic
+    - oracle
+    # - synthetic_vision  # enable in Phase 4
+
+recording:
+  enabled: true
+  fps: 10
+  max_frames: 300
+  output_dir: outputs/videos
+
+output:
+  metrics_dir: outputs/metrics
+  log_dir: outputs/logs
+
+thresholds:
+  heuristic_success_min: 0.20    # 20% for Phase 3 gate
+  oracle_success_min: 0.50       # 50% for Phase 3 gate

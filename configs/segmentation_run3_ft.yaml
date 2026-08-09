@@ -1,0 +1,61 @@
+# Phase-1 run3_ft: warm-start from run1 best + surgical aug + low LR
+# Usage:
+#   python src/train_segmentation.py --config configs/segmentation_run3_ft.yaml --amp
+
+model:
+  architecture: deeplabv3plus
+  encoder: resnet34
+  encoder_weights: null
+  in_channels: 3
+  classes: 13
+
+training:
+  img_size: 512
+  batch_size: 12
+  epochs: 30
+  lr: 2.5e-5
+  weight_decay: 1.0e-4
+  scheduler: cosine
+  loss_ce_weight: 0.35
+  loss_dice_weight: 0.65
+  use_class_weights: true
+  class_weight_power: 0.5
+  amp: true
+  seed: 42
+  num_workers: 4
+  pin_memory: true
+  save_every: 5
+  early_stopping_patience: 10
+  early_stopping_min_delta: 0.0003
+  init_checkpoint: outputs/checkpoints/run1/best.pt
+
+data:
+  root: data/cholecseg8k/extracted/CholecSeg8k
+  mask_suffix: _watershed
+  val_videos:
+    - video01
+    - video09
+    - video17
+
+augmentation:
+  strength: surgical
+  horizontal_flip: 0.5
+  brightness: 0.25
+  contrast: 0.25
+  saturation: 0.15
+  hue: 0.03
+  blur_p: 0.35
+  noise_p: 0.30
+  clahe_p: 0.25
+  dropout_p: 0.35
+
+output:
+  dir: outputs/checkpoints/run3_ft
+  log_dir: outputs/logs
+  tensorboard: true
+
+metrics:
+  mvp_miou: 0.50
+  good_miou: 0.55
+  mvp_dice: 0.45
+  good_dice: 0.55

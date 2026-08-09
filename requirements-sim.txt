@@ -1,0 +1,11 @@
+# Simulation environment — install on 4090 Linux server ONLY (x86_64)
+# git clone https://github.com/ScheiklP/sofa_env.git
+# cd sofa_env && python3.10 -m venv ~/.venvs/sofa && source ~/.venvs/sofa/bin/activate
+# pip install -e .
+#
+# sofa_env auto-installs SOFA v24.06.00 and requires Python 3.10 + x86_64
+# Do NOT attempt on Apple Silicon Mac (arm64)
+
+# sofa_env is installed via: pip install -e .  (from cloned repo)
+# Additional tools for recording:
+# sudo apt install ffmpeg

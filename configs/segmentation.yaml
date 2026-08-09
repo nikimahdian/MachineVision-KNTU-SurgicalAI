@@ -1,0 +1,54 @@
+# Segmentation training — CholecSeg8k real laparoscopic data
+# Usage: python src/train_segmentation.py --config configs/segmentation.yaml --amp
+
+model:
+  architecture: deeplabv3plus
+  encoder: resnet34
+  encoder_weights: imagenet
+  in_channels: 3
+  classes: 13
+
+training:
+  img_size: 512
+  batch_size: 16        # OOM → 8
+  epochs: 60
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  scheduler: cosine
+  loss_ce_weight: 0.5
+  loss_dice_weight: 0.5
+  amp: true
+  seed: 42
+  num_workers: 4
+  pin_memory: true
+  save_every: 5
+  # 0 = disabled (run1 historical). Prefer configs/segmentation_run2.yaml for new trains.
+  early_stopping_patience: 0
+  early_stopping_min_delta: 0.0001
+
+data:
+  root: data/cholecseg8k/extracted/CholecSeg8k
+  mask_suffix: _watershed
+  val_videos:
+    - video01
+    - video05
+    - video09
+    - video13
+    - video17
+
+augmentation:
+  horizontal_flip: 0.5
+  brightness: 0.2
+  contrast: 0.2
+  saturation: 0.1
+
+output:
+  dir: outputs/checkpoints/run1
+  log_dir: outputs/logs
+  tensorboard: true
+
+metrics:
+  mvp_miou: 0.50
+  good_miou: 0.60
+  mvp_dice: 0.45
+  good_dice: 0.55
