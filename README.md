@@ -25,7 +25,7 @@ Development only material is archived under `junk/` and is not required to run o
 | mIoU present | **0.526** |
 | Dice present | **0.611** |
 
-Strong classes: background, liver, abdominal wall, l-hook, grasper.  
+Strong classes: background, liver, abdominal wall, l-hook, grasper.   
 Weak or zero: blood, cystic_duct, liver_ligament.
 
 ### Control (TissueRetraction)
