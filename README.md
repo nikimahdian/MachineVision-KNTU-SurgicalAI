@@ -1,6 +1,6 @@
 # Surgical AI: Vision and Robotic Control
 
-**Student:** Niki Mahdian (`40123153`)  
+ 
 **Topic:** Real laparoscopic semantic segmentation (CholecSeg8k / DeepLabV3+) plus TissueRetraction control (sofa_env) with RGB Behavior Cloning
 
 ## Final delivery
